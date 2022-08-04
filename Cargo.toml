@@ -1,0 +1,24 @@
+[package]
+name = "wolgram"
+version = "0.1.0"
+
+authors = ["PauMAVA"]
+edition = "2021"
+
+license = "MIT"
+repository = "https://github.com/PauMAVA/wolgram"
+
+description = "Simple telegram bot for remote Wake On LAN control"
+keywords = ["telegram", "bot", "chat", "wol", "wake-on-lan"]
+categories = ["network-programming"]
+readme = "README.md"
+
+[dependencies]
+tokio = { version = "0.2.25", features = ["macros"] }
+telegram-bot = "0.8.0"
+futures = "0.3.21"
+wakey = "0.1.2"
+
+carlog = "0.1.0"
+confy = "0.4.0"
+serde = { version = "1", features = ["derive"] }
